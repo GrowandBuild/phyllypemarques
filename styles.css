@@ -915,6 +915,8 @@ body::before {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 .hero-image {
     position: absolute;
@@ -1382,6 +1384,9 @@ body::before {
         position: relative !important;
         overflow: visible !important;
         display: block !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        max-width: 95vw !important;
     }
     
     .hero-image {
@@ -5066,4 +5071,25 @@ html {
   color: #fff !important;
   margin-top: 0 !important;
   margin-bottom: 2em !important;
+}
+
+@media (max-width: 600px) {
+  .hero .section-title {
+    font-size: 1.05rem !important;
+    line-height: 1.2 !important;
+    padding: 0 !important;
+    margin-bottom: 0.5em !important;
+  }
+  .hero .section-subtitle {
+    font-size: 0.92rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1.2em !important;
+  }
+}
+
+.contact, .contact-form, .footer, .footer-section, .footer-bottom {
+    background: none !important;
+    color: #fff !important;
+    opacity: 1 !important;
+    filter: none !important;
 }

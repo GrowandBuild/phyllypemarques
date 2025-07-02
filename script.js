@@ -443,7 +443,10 @@ function typeEffect() {
         }
     }
 }
-if (typedText) typeEffect();
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (typedText) typeEffect();
+});
 
 // Lightbox para imagens do cardápio
 const menuImages = document.querySelectorAll('.menu-item-image img');
