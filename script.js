@@ -443,4 +443,49 @@ function typeEffect() {
         }
     }
 }
-if (typedText) typeEffect(); 
+if (typedText) typeEffect();
+
+// Lightbox para imagens do cardápio
+const menuImages = document.querySelectorAll('.menu-item-image img');
+menuImages.forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => {
+        const lightbox = document.createElement('div');
+        lightbox.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0,0.95);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999;
+            cursor: pointer;
+        `;
+        const lightboxImg = document.createElement('img');
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxImg.style.cssText = `
+            max-width: 95vw;
+            max-height: 90vh;
+            border-radius: 16px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.7);
+            background: #fff;
+        `;
+        lightbox.appendChild(lightboxImg);
+        document.body.appendChild(lightbox);
+        lightbox.addEventListener('click', () => {
+            document.body.removeChild(lightbox);
+        });
+        document.addEventListener('keydown', function closeLightbox(e) {
+            if (e.key === 'Escape') {
+                if (document.body.contains(lightbox)) {
+                    document.body.removeChild(lightbox);
+                }
+                document.removeEventListener('keydown', closeLightbox);
+            }
+        });
+    });
+}); 
