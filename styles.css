@@ -5055,3 +5055,15 @@ html {
     margin-left: 3px !important;
   }
 }
+
+.section-title, h2.section-title, h3.section-title {
+  text-align: center !important;
+  color: #fff !important;
+  margin-bottom: 0.5em;
+}
+.section-subtitle, p.section-subtitle {
+  text-align: center !important;
+  color: #fff !important;
+  margin-top: 0 !important;
+  margin-bottom: 2em !important;
+}
