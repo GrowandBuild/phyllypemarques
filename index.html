@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phyllype Marques - Chef Profissional</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Remover Google Fonts para modo lite -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Partículas elegantes -->
+    <!-- <div class="elegant-particles"> ... </div> -->
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Phyllype Marques</h2>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+                    <li class="nav-item nav-dropdown">
+                        <a href="#about" class="nav-link nav-dropdown-toggle">Sobre <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#about" class="dropdown-link">O Chef</a></li>
+                            <li><a href="#curriculo" class="dropdown-link">Formação</a></li>
+                            <li><a href="#chef-experiencia" class="dropdown-link">Experiência</a></li>
+                            <li><a href="#chef-premios" class="dropdown-link">Prêmios</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Cardápio</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Galeria</a></li>
+                    <li class="nav-item nav-dropdown">
+                        <a href="#contact" class="nav-link nav-dropdown-toggle">Contato <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#contact" class="dropdown-link">Fale Conosco</a></li>
+                            <li><a href="#social" class="dropdown-link">Redes Sociais</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="hamburger" id="hamburgerMenu" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu" tabindex="0">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <div class="menu-overlay" id="menuOverlay"></div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Phyllype Marques <span id="typed-text"></span></h1>
+                <p class="hero-subtitle">Transformando ingredientes em experiências gastronômicas únicas</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Ver Cardápio</a>
+                    <a href="#contact" class="btn btn-secondary">Solicitar Orçamento</a>
+                </div>
+            </div>
+            <div class="hero-gallery">
+                <div class="hero-image main-image">
+                    <img src="imagens/chef/chef-portrait.webp" alt="Chef Phyllype Marques" loading="lazy">
+                </div>
+                <div class="hero-image floating-image-1">
+                    <img src="imagens/pratos/prato-02.webp" alt="Prato diferente no topo" loading="lazy">
+                </div>
+                <div class="hero-image floating-image-2">
+                    <img src="imagens/pratos/prato-04.webp" alt="Prato gourmet" loading="lazy">
+                </div>
+                <div class="hero-image floating-image-3">
+                    <img src="imagens/pratos/prato-05.webp" alt="Especialidade" loading="lazy">
+                </div>
+                <div class="hero-image floating-image-4">
+                    <img src="imagens/pratos/prato-07.webp" alt="Prato diferente lateral" loading="lazy">
+                </div>
+            </div>
+            
+            <!-- Botões adicionais abaixo da galeria -->
+            <div class="hero-gallery-buttons">
+                <a href="#menu" class="btn btn-primary">Ver Cardápio</a>
+                <a href="#contact" class="btn btn-secondary">Solicitar Orçamento</a>
+            </div>
+        </div>
+        <div class="hero-background-elements">
+            <div class="floating-element element-1"></div>
+            <div class="floating-element element-2"></div>
+            <div class="floating-element element-3"></div>
+            <div class="floating-element element-4"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre o Chef Phyllype</h2>
+                    <p class="about-description">
+                        "Tenho uma paixão inabalável por transformar ingredientes frescos em experiências gastronômicas memoráveis."
+                    </p>
+                    <p class="about-description">
+                        Especialista na introdução do método SWOT e da ferramenta 5S, Phyllype busca oportunidades desafiadoras onde possa aplicar suas habilidades culinárias, liderar equipes talentosas e elevar a reputação gastronômica de estabelecimentos de prestígio.
+                    </p>
+                    <p class="about-description">
+                        Com formação sólida em gastronomia e gestão, Phyllype dedica-se a oferecer experiências gastronômicas memoráveis, seja em eventos especiais, jantares privados ou consultoria culinária.
+                    </p>
+                    <div class="chef-stats">
+                        <div class="stat">
+                            <h3>15</h3>
+                            <p>Anos de Experiência</p>
+                        </div>
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Eventos Realizados</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Pratos Exclusivos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chef-portrait">
+                    <div class="portrait-container">
+                        <div class="portrait-image">
+                            <img src="imagens/chef/chef-portrait.webp" alt="Chef Phyllype Marques" loading="lazy">
+                        </div>
+                        <div class="portrait-overlay">
+                            <div class="chef-signature">
+                                <h3>Phyllype Marques</h3>
+                                <p>Chef Executivo</p>
+                            </div>
+                        </div>
+                        <div class="portrait-decoration">
+                            <div class="decoration-element"></div>
+                            <div class="decoration-element"></div>
+                            <div class="decoration-element"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Cardápio Especial</h2>
+            <p class="section-subtitle">Descubra nossos pratos mais pedidos e criações exclusivas</p>
+            
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="entradas">Entradas</button>
+                <button class="category-btn" data-category="principais">Pratos Principais</button>
+                <button class="category-btn" data-category="sobremesas">Sobremesas</button>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-item" data-category="entradas">
+                    <div class="menu-item-image">
+                        <img src="imagens/pratos/prato-01.webp" alt="Entrada especial" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Salada Mediterrânea</h3>
+                        <p>Mix de folhas verdes, tomates cereja, azeitonas e queijo feta</p>
+                        <span class="price">Saiba mais</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="principais">
+                    <div class="menu-item-image">
+                        <img src="imagens/pratos/prato-04.webp" alt="Prato principal" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Filé Mignon ao Molho Madeira</h3>
+                        <p>Filé mignon grelhado com molho madeira e acompanhamentos</p>
+                        <span class="price">Saiba mais</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="principais">
+                    <div class="menu-item-image">
+                        <img src="imagens/pratos/prato-05.webp" alt="Prato principal" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Risoto de Funghi</h3>
+                        <p>Risoto cremoso com funghi porcini e parmesão</p>
+                        <span class="price">Saiba mais</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="sobremesas">
+                    <div class="menu-item-image">
+                        <img src="imagens/pratos/prato-05.webp" alt="Sobremesa" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Tiramisu Clássico</h3>
+                        <p>Sobremesa italiana com mascarpone e café</p>
+                        <span class="price">Saiba mais</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="entradas">
+                    <div class="menu-item-image">
+                        <img src="imagens/pratos/prato-06.webp" alt="Entrada" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Carpaccio de Salmão</h3>
+                        <p>Salmão fresco com azeite, limão e ervas finas</p>
+                        <span class="price">Saiba mais</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="principais">
+                    <div class="menu-item-image">
+                        <img src="imagens/pratos/prato-07.webp" alt="Prato principal" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Penne ao Molho Pesto</h3>
+                        <p>Penne com molho pesto caseiro e parmesão</p>
+                        <span class="price">Saiba mais</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="principais">
+                    <div class="menu-item-image">
+                        <img src="imagens/pratos/prato-08.webp" alt="Prato especial" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Frango ao Molho Branco</h3>
+                        <p>Peito de frango com molho branco e ervas</p>
+                        <span class="price">Saiba mais</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="sobremesas">
+                    <div class="menu-item-image">
+                        <img src="imagens/pratos/prato-09.webp" alt="Sobremesa artística" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Panna Cotta</h3>
+                        <p>Sobremesa italiana com calda de frutas vermelhas</p>
+                        <span class="price">Saiba mais</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="entradas">
+                    <div class="menu-item-image">
+                        <img src="imagens/pratos/prato-10.webp" alt="Entrada gourmet" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Bruschetta Italiana</h3>
+                        <p>Pão torrado com tomate, manjericão e azeite</p>
+                        <span class="price">Saiba mais</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="principais">
+                    <div class="menu-item-image">
+                        <img src="imagens/pratos/prato-11.webp" alt="Prato principal" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Lasanha à Bolonhesa</h3>
+                        <p>Lasanha tradicional com molho à bolonhesa</p>
+                        <span class="price">Saiba mais</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="principais">
+                    <div class="menu-item-image">
+                        <img src="imagens/pratos/prato-12.webp" alt="Criação especial" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Peixe ao Sal</h3>
+                        <p>Peixe fresco assado em crosta de sal</p>
+                        <span class="price">Saiba mais</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="sobremesas">
+                    <div class="menu-item-image">
+                        <img src="imagens/pratos/prato-13.webp" alt="Sobremesa exclusiva" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Crème Brûlée</h3>
+                        <p>Sobremesa francesa com caramelo crocante</p>
+                        <span class="price">Saiba mais</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="principais">
+                    <div class="menu-item-image">
+                        <img src="imagens/pratos/prato-14.webp" alt="Prato artístico" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Risoto de Camarão</h3>
+                        <p>Risoto cremoso com camarões e ervas</p>
+                        <span class="price">Saiba mais</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="entradas">
+                    <div class="menu-item-image">
+                        <img src="imagens/pratos/prato-15.webp" alt="Criação do chef" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Antipasto Italiano</h3>
+                        <p>Seleção de frios e queijos italianos</p>
+                        <span class="price">Saiba mais</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="principais">
+                    <div class="menu-item-image">
+                        <img src="imagens/pratos/prato-16.webp" alt="Prato especial" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Costela ao Bafo</h3>
+                        <p>Costela suína cozida lentamente com temperos</p>
+                        <span class="price">Saiba mais</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Currículo Section -->
+    <section id="curriculo" class="curriculo">
+        <div class="floating-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="container">
+            <h2 class="section-title">Formação e Experiência</h2>
+            <p class="section-subtitle">Conheça a trajetória profissional do Chef Phyllype</p>
+            
+            <div class="curriculo-content">
+                <div class="curriculo-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Formação Acadêmica</h3>
+                    <ul>
+                        <li><strong>Universidade Paulista (UNIP)</strong> - Licenciatura em Gastronomia (2017)</li>
+                        <li><strong>Unicesumar (EAD)</strong> - Pós-graduação em Gestão de Gastronomia (2021)</li>
+                        <li><strong>Unieuro</strong> - Pós-graduação em Gestão de Pessoas (em andamento)</li>
+                    </ul>
+                </div>
+
+                <div class="curriculo-section">
+                    <h3><i class="fas fa-briefcase"></i> Experiência Profissional</h3>
+                    <ul>
+                        <li><strong>Restaurante Ciotto</strong> - Chefe de Cozinha (1 ano e 6 meses)<br>
+                            <em>Culinária Italiana - Gestão de 25 colaboradores</em></li>
+                        <li><strong>Grande Sabor do Tacacá</strong> - Gerente de Cozinha (2 anos e 7 meses)<br>
+                            <em>Redução de 15% nos custos operacionais</em></li>
+                        <li><strong>Delirium Café Brasília</strong> - Chefe de Cozinha (2 anos)<br>
+                            <em>Cardápio exclusivo para eventos especiais</em></li>
+                        <li><strong>Café das Orquídeas</strong> - Chefe de Cozinha (1 ano e 5 meses)<br>
+                            <em>Aumento de 25% nas vendas com menu inovador</em></li>
+                        <li><strong>Frutaria São Paulo</strong> - Chefe de Cozinha (2 anos)<br>
+                            <em>Menu sazonal e variedades de sushi - Referência gastronômica</em></li>
+                    </ul>
+                </div>
+
+                <div class="curriculo-section">
+                    <h3><i class="fas fa-star"></i> Especialidades e Metodologias</h3>
+                    <ul>
+                        <li><strong>Método SWOT</strong> - Análise estratégica para gestão gastronômica</li>
+                        <li><strong>Ferramenta 5S</strong> - Organização e eficiência em cozinhas</li>
+                        <li><strong>Kaizen</strong> - Melhoria contínua de processos</li>
+                        <li><strong>Culinária Italiana</strong> - Especialização em massas artesanais e molhos</li>
+                        <li><strong>Culinária Internacional</strong> - Sushi e pratos regionais brasileiros</li>
+                        <li><strong>Gestão de Equipes</strong> - Treinamento e liderança de brigadas</li>
+                    </ul>
+                </div>
+
+                <div class="curriculo-section">
+                    <h3><i class="fas fa-tools"></i> Habilidades Técnicas</h3>
+                    <ul>
+                        <li><strong>Técnicas Culinárias Avançadas</strong> - Culinária internacional e regional brasileira</li>
+                        <li><strong>Gestão de Cozinha</strong> - Gerenciamento de operações e liderança de equipes</li>
+                        <li><strong>Inovação Culinária</strong> - Criação de menus inovadores e memoráveis</li>
+                        <li><strong>Comunicação e Liderança</strong> - Motivação de equipes e ambiente harmonioso</li>
+                        <li><strong>Atendimento ao Público</strong> - Experiência gastronômica excepcional</li>
+                    </ul>
+                </div>
+
+                <div class="curriculo-section">
+                    <h3><i class="fas fa-trophy"></i> Conquistas e Resultados</h3>
+                    <ul>
+                        <li>Redução de 20% no CMV através de gestão de estoque eficiente</li>
+                        <li>Aumento de 30% na eficiência da equipe com programas de treinamento</li>
+                        <li>Melhoria significativa na satisfação dos clientes</li>
+                        <li>Implementação de fluxos de produção otimizados</li>
+                        <li>Desenvolvimento de cardápios autorais com foco em ingredientes frescos</li>
+                        <li>Menu sazonal que transformou estabelecimento em referência gastronômica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Galeria de Pratos</h2>
+            <p class="section-subtitle">Uma seleção dos nossos melhores momentos na cozinha</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="imagens/pratos/prato-08.webp" alt="Prato especial" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Prato Especial</h3>
+                        <p>Criação exclusiva do chef</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens/pratos/prato-09.webp" alt="Sobremesa artística" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Sobremesa Artística</h3>
+                        <p>Arte em cada detalhe</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens/pratos/prato-10.webp" alt="Entrada gourmet" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Entrada Gourmet</h3>
+                        <p>Sabores que impressionam</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens/pratos/prato-11.webp" alt="Prato principal" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Prato Principal</h3>
+                        <p>Harmonia de sabores</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens/pratos/prato-12.webp" alt="Criação especial" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Criação Especial</h3>
+                        <p>Inovação na cozinha</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens/pratos/prato-13.webp" alt="Sobremesa exclusiva" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Sobremesa Exclusiva</h3>
+                        <p>Final perfeito</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens/pratos/prato-14.webp" alt="Prato artístico" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Prato Artístico</h3>
+                        <p>Arte na apresentação</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens/pratos/prato-15.webp" alt="Criação do chef" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Criação do Chef</h3>
+                        <p>Assinatura única</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens/pratos/prato-16.webp" alt="Prato especial" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Prato Especial</h3>
+                        <p>Experiência única</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="contact-description">
+                        Está planejando um evento especial? Quer experimentar nossa culinária? 
+                        Entre em contato conosco para discutir suas necessidades.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Telefone</h3>
+                                <p>+55 47 8811-5103</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>phyllype@phyllypemarques.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Localização</h3>
+                                <p>São Paulo, SP - Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/phyllypemarques/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/554788115103" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Seu email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Seu telefone">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Selecione o serviço</option>
+                                <option value="evento">Evento Especial</option>
+                                <option value="jantar">Jantar Privado</option>
+                                <option value="consultoria">Consultoria Culinária</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Conte-nos sobre seu projeto" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Phyllype Marques</h3>
+                    <p>Transformando momentos em experiências gastronômicas únicas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li>Eventos Especiais</li>
+                        <li>Jantares Privados</li>
+                        <li>Consultoria Culinária</li>
+                        <li>Cursos de Culinária</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: phyllype@phyllypemarques.com</p>
+                    <p>Tel: +55 47 8811-5103</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/phyllypemarques/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/554788115103" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Phyllype Marques. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
